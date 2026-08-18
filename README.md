@@ -100,6 +100,14 @@ You can use the plugin with Cortex-Debug by defining following `launch.json`
 }
 ```
 
+## Using with Rowley CrossWorks
+
+CrossWorks does not use a GDB server, so this plugin does not apply there.
+The same algorithm is available as a CrossStudio threads script in
+[crossworks/zephyr_threads.js](crossworks/zephyr_threads.js) — see
+[crossworks/README.md](crossworks/README.md), which also covers debugging an
+externally built (west/CMake) Zephyr application over ST-LINK.
+
 ## Using with macOS
 
 On macOS, ``JLinkGDBServer`` is built with library validation options that require built plugins to be ``codesign``ed with the same Team ID as the executable.
